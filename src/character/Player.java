@@ -35,8 +35,8 @@ public class Player extends Entity {
     public static final float GRAVITY_OFFSET = 0.35f;
     public static final float SLIDING_GRAVITY = 10;
     public static final float FALLING_GRAVITY_VEL = 0.7f;
-    public static final float RUNNINGJUMPING_GRAVITY = 8;
-    public static final float RUNNINGJUMPING_GRAVITY_OFFSET = 0.2f;
+    public static final float RUNNINGJUMPING_GRAVITY = 10;
+    public static final float RUNNINGJUMPING_GRAVITY_OFFSET = 0.35f;
     public static final int FALLING_VELX = 3;
     public static final float DASHJUMPING_GRAVITY_OFFSET = 0.3f;
     public static final float DASHJUMPING_GRAVITY = 8;

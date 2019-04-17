@@ -103,6 +103,11 @@ public class Handler {
                     addObject(new Wall(x*64, y*64, Game.TILE_SIZE, Game.TILE_SIZE, false, Id.wall));
                 }
 
+                //Breakable Wall
+                if(red == 0 && green == 0 && blue == 150) {
+                    addObject(new Wall(x*64, y*64, Game.TILE_SIZE, Game.TILE_SIZE, true, Id.wall));
+                }
+
                 //Spike
                 if(red == 0 && green == 255 && blue == 0) {
                     addObject(new UpwardSpike(x*64, y*64, Game.TILE_SIZE, Game.TILE_SIZE, false, Id.upwardSpike));

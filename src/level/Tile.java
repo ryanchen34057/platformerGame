@@ -12,7 +12,7 @@ public abstract class Tile {
     protected int height;
 
     //State
-    private boolean breakable;
+    protected boolean breakable;
 
     //info
     private Id id;

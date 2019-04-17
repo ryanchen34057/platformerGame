@@ -13,13 +13,19 @@ public class Wall extends Tile {
 
     @Override
     public void paint(Graphics g) {
-            g.drawImage(SpriteManager.wall.getBufferedImage(), super.getX(), super.getY(),
+        if(!breakable) {
+            g.drawImage(SpriteManager.wall1.getBufferedImage(), super.getX(), super.getY(),
                     super.getWidth(), super.getHeight(), null);
-            if(Game.debugMode) {
-                g.setColor(Color.GREEN);
-                g.drawRect(getX(), getY(), super.getWidth(),getHeight() );
+        }
+        else {
+            g.drawImage(SpriteManager.wall2Breakable.getBufferedImage(), super.getX(), super.getY(),
+                    super.getWidth(), super.getHeight(), null);
+        }
 
-            }
+        if(Game.debugMode) {
+            g.setColor(Color.GREEN);
+            g.drawRect(getX(), getY(), super.getWidth(),getHeight() );
+        }
     }
 
     @Override
